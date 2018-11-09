@@ -6,7 +6,6 @@ CONFIG += plugin c++11
 TARGET = $$qtLibraryTarget($$TARGET)
 uri = org.ecloud.kaleidospect
 
-# Input
 SOURCES += \
         kaleidospect_plugin.cpp \
         starburst.cpp
@@ -15,7 +14,12 @@ HEADERS += \
         kaleidospect_plugin.h \
         starburst.h
 
+RESOURCES += \
+    shaders.qrc
+
 DISTFILES = qmldir
+
+OTHER_FILES += ../qml/*.qml
 
 !equals(_PRO_FILE_PWD_, $$OUT_PWD) {
     copy_qmldir.target = $$OUT_PWD/qmldir

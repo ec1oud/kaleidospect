@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/">
+        <file>shaders/starburst.fsh</file>
+        <file>shaders/starburst.vsh</file>
+    </qresource>
+</RCC>

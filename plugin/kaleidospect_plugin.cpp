@@ -8,4 +8,3 @@ void KaleidospectPlugin::registerTypes(const char *uri)
     // @uri org.ecloud.kaleidospect
     qmlRegisterType<Starburst>(uri, 1, 0, "Starburst");
 }
-
